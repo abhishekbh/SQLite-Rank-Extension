@@ -1,0 +1,12 @@
+include dll in your sqlite session with
+.load rank.dll
+
+sample query:
+   SELECT docid FROM documents 
+   WHERE documents MATCH <query> 
+   ORDER BY rank(matchinfo(documents), 1.0, 0.5) DESC
+
+for table
+   CREATE VIRTUAL TABLE documents USING fts3(title, content)
+
+More info: http://www.sqlite.org/fts3.html
