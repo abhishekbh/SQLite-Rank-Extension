@@ -1,0 +1,1 @@
+"select namespace from NJVersion;"
