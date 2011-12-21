@@ -1,0 +1,5 @@
+Build with:
+  gcc -shared -fPIC -Isqlite3 -o rank.so rank.c 
+
+Prereq:
+  Get sqlite3-devel
