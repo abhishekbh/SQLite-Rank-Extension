@@ -1,5 +1,5 @@
 Build with:
-  cl /Gd half.c /I sqlite3 /DDLL /LD /link /export:sqlite3_extension_init /out:rank.dll
+  cl /Gd rank.c /I sqlite3 /DDLL /LD /link /export:sqlite3_extension_init /out:rank.dll
 
 Prereq:
   Get sqlite-amalgamation

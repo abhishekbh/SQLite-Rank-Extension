@@ -1,9 +1,6 @@
 #include "sqlite3ext.h"
 SQLITE_EXTENSION_INIT1
 
-/*
-** returns 
-*/
 static void rank(sqlite3_context *pCtx, int nVal, sqlite3_value **apVal) {
   int *aMatchinfo;
   int nCol;
